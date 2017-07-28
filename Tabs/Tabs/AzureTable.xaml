@@ -11,7 +11,7 @@
         <StackLayout Margin="20" 
                      Orientation="Vertical">
 
-            <Button Text="Check Dogs Per Day" 
+            <Button Text="Recent Detections" 
                     TextColor="White" 
                     BackgroundColor="#e3a93a"
                     Clicked="Handle_ClickedAsync" />
