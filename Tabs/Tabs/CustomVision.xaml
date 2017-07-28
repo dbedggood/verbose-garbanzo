@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Tabs.CustomVision" 
+             Title="Dog Detector">
+    
+    <StackLayout Margin="20" 
+                 Orientation="Vertical">
+
+        <Button x:Name="myButton"
+                Text="Search"
+                TextColor="White"
+                BackgroundColor="#e3a93a"
+                Clicked="LoadCamera" />
+
+        <Label x:Name="TextOutput"
+               TextColor="Black"/>
+
+        <Image x:Name="image" Aspect="AspectFit" />
+        
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Tabs.AzureTable"
+             Title="History">
+
+    <ContentPage.Content>
+
+        <StackLayout Margin="20" 
+                     Orientation="Vertical">
+
+            <Button Text="Check Dogs Per Day" 
+                    TextColor="White" 
+                    BackgroundColor="#e3a93a"
+                    Clicked="Handle_ClickedAsync" />
+
+
+            <ListView x:Name="DogList">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <TextCell Text="{Binding ScanResult, StringFormat='Scan Result:                             {0:N}'}"
+                                  TextColor="Black"
+                                  Detail="{Binding CreateDat, StringFormat='{0:D}'}"
+                                  DetailColor="Black"/>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>
