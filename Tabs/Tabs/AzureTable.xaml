@@ -24,9 +24,9 @@
                     <DataTemplate>
 
                         <TextCell Text="{Binding ScanResult, StringFormat='Scan Result:                             {0:N}'}"
-                                  TextColor="Black"
+                                  TextColor="Gray"
                                   Detail="{Binding CreateDat, StringFormat='{0:D}'}"
-                                  DetailColor="Black"/>
+                                  DetailColor="Gray"/>
 
                     </DataTemplate>
 

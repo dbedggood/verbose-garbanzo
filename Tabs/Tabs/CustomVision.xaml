@@ -15,8 +15,7 @@
                 BackgroundColor="#e3a93a"
                 Clicked="LoadCamera" />
 
-        <Label x:Name="TextOutput"
-               TextColor="Black"/>
+        <Label x:Name="TextOutput" />
 
         <Image x:Name="image" Aspect="AspectFit" />
         
